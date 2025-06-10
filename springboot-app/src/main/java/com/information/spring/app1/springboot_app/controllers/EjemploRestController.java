@@ -5,12 +5,18 @@ import java.util.Map;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
+
+
 @RestController
+@RequestMapping("/api")
+
 public class EjemploRestController {
-    @GetMapping("/detalles_claseInfo2")
+@GetMapping(path = "/detalles_claseInfo2")
+
     
     public Map<String, Object> detalles_claseInfo2(){
         Map<String, Object> respuesta = new HashMap<>();
