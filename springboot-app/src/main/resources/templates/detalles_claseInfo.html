@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:ht="http:///wwww.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title th:text="${titulo}"></title>
 </head>
+
 <body>
-    <h1 th:text="${servidor}"></h1>
-    <h2 th:text="${ip}"></h2>
+    <h1>Informacion del empleado</h1>
+    <ul>
+        <li><strong>Nombre : </strong><span th:text=${Empleado.nombre}></span></li>
+        <li><strong>apellido : </strong><span th:text=${Empleado.apellido}></span></li>
+        <li><strong>direccion : </strong><span th:text=${Empleado.direccion}></span></li>
+        <li><strong>puesto : </strong><span th:text=${Empleado.puesto}></span></li>
+        <li><strong>edad : </strong><span th:text=${Empleado.edad}></span></li>
+        <li><strong>telf : </strong><span th:text=${Empleado.telefono}></span></li>
+        <li><strong>id : </strong><span th:text=${Empleado.id}></span></li>
+    </ul>
 </body>
+
 </html>
