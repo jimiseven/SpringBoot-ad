@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:ht="http:///wwww.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de spring boot</title>
+    <title th:text="${titulo}"></title>
 </head>
 <body>
-    <h1>cambios vista de detalles_claseInfo</h1>
+    <h1 th:text="${servidor}"></h1>
+    <h2 th:text="${ip}"></h2>
 </body>
 </html>
