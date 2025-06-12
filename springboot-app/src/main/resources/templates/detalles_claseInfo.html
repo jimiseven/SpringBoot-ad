@@ -10,10 +10,13 @@
 <body>
     <h1>Informacion del empleado</h1>
     <!-- cambios en el html -->
-    <ul> 
+    <ul>
         <li><strong>Nombre : </strong><span th:text=${Empleado.nombre}></span></li>
         <li><strong>apellido : </strong><span th:text=${Empleado.apellido}></span></li>
-        <li><strong>direccion : </strong><span th:text=${Empleado.direccion}></span></li>
+        <li>
+            <strong>Dirección: </strong>
+            <span th:text="${Empleado.direccion != null ? Empleado.direccion : 'No tiene dirección'}"></span>
+        </li>
         <li><strong>puesto : </strong><span th:text=${Empleado.puesto}></span></li>
         <li><strong>edad : </strong><span th:text=${Empleado.edad}></span></li>
         <li><strong>telf : </strong><span th:text=${Empleado.telefono}></span></li>

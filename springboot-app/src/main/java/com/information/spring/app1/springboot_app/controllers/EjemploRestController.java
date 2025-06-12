@@ -21,17 +21,17 @@ public class EjemploRestController {
 
 
 
-    public claseDTO detalles_claseInfo2(){
+    public Map<String, Object> detalles_claseInfo2(){
 
-        // Empleados empleado1 = new Empleados("jimi", "torrico", "av galindo", "junior", 11, 76992490, 11);
+        Empleados empleado1 = new Empleados("jimi", "torrico", "av galindo", "junior", 11, 76992490, 11);
 
-        // Map<String, Object> respuesta = new HashMap<>();
-        // respuesta.put("Empleado",empleado1);
+        Map<String, Object> respuesta = new HashMap<>();
+        respuesta.put("Empleado",empleado1);
 
-        claseDTO usuario1 = new claseDTO();
-        usuario1.setTitulo("Informacion del Empleado");
-        usuario1.setUsuario("jimi torrico");
+        // claseDTO usuario1 = ne3w claseDTO();
+        // usuario1.setTitulo("Informacion del Empleado");
+        // usuario1.setUsuario("jimi torrico");
 
-        return usuario1;
+        return respuesta;
     }
 }
