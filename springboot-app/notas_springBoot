@@ -1,0 +1,44 @@
+notas spring boot
+
+
+Controlador, evalua una petición http (request de los usuarios)
+tomar en cuentas mayusculas y minusculas para los sufijos de una clase 
+
+
+los metodos tienen diferentes funcionalidades(get, post, delete, put):
+@GetMapping("path")
+    public String getMethodName(@RequestParam String param) {
+        return new String();
+    }
+
+beans son componentes de la app 
+
+
+patron de inyeccion de dependencias, cuando se pasa datos del back al front
+
+utilizamos thymeleaf para reconocer elementos personalizados en html //<html lang="en" xmlns:ht="http:///wwww.thymeleaf.org">
+ejemplo de uso, en el html directamente usariamos datos de back al front con <title th:text="${titulo}"></title>
+
+
+rest controller: anotaciones para un controlador, por medio de json o xml
+api rest: permite la comunicacion de sistemas atravez de sistemas http(api:application programming interface)
+
+handler vs handler rest
+
+
+requestMapping: anotacion como un controlador, mapea solicitud http (@RequestMapping("/api")), es una ruta de primer nivel, solo funciona para peticiones GET
+
+repasar mvc
+
+dto: clase para trasferir datos, actua como un contenedor. Guarda preocupaciones, (persistencia de datos, seguridad)
+
+directivas thymeleaf: revisar documentacion
+
+modelattribute : caracteristica para manejar datos, pasa datos del controlador por medio de los formularios. pasamos valores enteros desde java al html, en forma de un arreglo de objetos
+
+requestpararam : recibimos un parametro desdes otro lado en http y lo usamos (podemos recibir en el url http://localhost:9525/api/parametros/detalle?informacion=saludos%20de%20%20la%20consulda%20http)
+
+pathvariable: funciona para obtener variables de una url (solicitud http) y guardarlos o usarlos en el controlador
+
+
+value: 
