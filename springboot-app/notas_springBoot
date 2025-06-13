@@ -41,4 +41,6 @@ requestpararam : recibimos un parametro desdes otro lado en http y lo usamos (po
 pathvariable: funciona para obtener variables de una url (solicitud http) y guardarlos o usarlos en el controlador
 
 
-value: 
+value: anotacin para iniyectar valores en campos, apartir de un arichivo de propiedades (yaml, variables de entorno). externalizamos los valores de la app 
+
+maven: herramienta de gestion de proyectos (empaquetado) (nvmw clean package, java -jar ./nombre del paquete)
