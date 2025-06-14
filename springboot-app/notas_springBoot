@@ -43,4 +43,9 @@ pathvariable: funciona para obtener variables de una url (solicitud http) y guar
 
 value: anotacin para iniyectar valores en campos, apartir de un arichivo de propiedades (yaml, variables de entorno). externalizamos los valores de la app 
 
-maven: herramienta de gestion de proyectos (empaquetado) (nvmw clean package, java -jar ./nombre del paquete)
+maven: herramienta de gestion de proyectos (empaquetado) (nvmw clean package, java -jar ./nombre del paquete), importante para levantar produccion en el server que necesitemos
+
+injeccion de dependencias : recibir y crear variables o dependencias ()
+
+Nuevo proyecto : services interactuan con repositorios (acceden a base de datos), servicios interactuan con los obnjetos de logica de negocios.
+
