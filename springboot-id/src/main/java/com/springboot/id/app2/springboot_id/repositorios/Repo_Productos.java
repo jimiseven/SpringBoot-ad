@@ -21,4 +21,11 @@ public class Repo_Productos {
     public List<Productos> findAll() {
         return datos;
     }
+
+    public Productos findById(Long id) {
+        return datos.stream()
+                .filter(producto -> producto.getIdProducto().equals(id))
+                .findFirst()
+                .orElse(null);
+    }
 }
