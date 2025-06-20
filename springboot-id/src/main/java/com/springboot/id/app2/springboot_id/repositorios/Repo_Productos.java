@@ -10,7 +10,7 @@ public class Repo_Productos {
     List<Productos> datos;
 
     public Repo_Productos() {
-        this.datos = Arrays.asList( null,
+        this.datos = Arrays.asList(
                 new Productos(1L, "Producto 1", 10.00),
                 new Productos(2L, "Producto 2", 20.00),
                 new Productos(3L, "Producto 3", 30.00),
@@ -19,6 +19,7 @@ public class Repo_Productos {
     }
 
     public List<Productos> findAll() {
+
         return datos;
     }
 

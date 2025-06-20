@@ -14,13 +14,13 @@ public class Productos_Services {
     // Constructor
 
     public List<Productos> findAll() {
-        return repositorio.findAll();
+        return repositorio.findAll().stream().map(p -> {
+            Double precioT = p.getPrecio() * 1.5d;
+            p.setPrecio(precioT.intValue()); // Aumentar el precio en un 10%
+            return p;
+        }).toList();
 }
-    public Productos findById(Long id) {
-        return null;
-    }
-
-    public Productos save(Productos producto) {
-        return null;
+    public Productos findById(Long idProducto) {
+        return repositorio.findById(idProducto);
     }
 }
