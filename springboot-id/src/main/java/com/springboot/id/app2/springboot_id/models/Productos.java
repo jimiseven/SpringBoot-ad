@@ -1,6 +1,6 @@
 package com.springboot.id.app2.springboot_id.models;
 
-public class Productos {
+public class Productos implements Cloneable {
 
     private Long idProducto;
     private String nombre;
