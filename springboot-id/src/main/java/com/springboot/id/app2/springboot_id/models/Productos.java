@@ -6,7 +6,7 @@ public class Productos {
     private String nombre;
     private double precio;
 
-    public Productos(Long idProducto, String nombre, String precio) {
+    public Productos(Long idProducto, String nombre, double precio) {
         this.idProducto = idProducto;
         this.nombre = nombre;
         this.precio = precio;
@@ -27,7 +27,7 @@ public class Productos {
     public double getPrecio() {
         return precio;
     }
-    public void setPrecio(String precio) {
+    public void setPrecio(double precio) {
         this.precio = precio;
     }
 }
