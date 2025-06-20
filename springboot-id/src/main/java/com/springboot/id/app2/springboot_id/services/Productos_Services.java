@@ -16,8 +16,9 @@ public class Productos_Services {
     public List<Productos> findAll() {
         return repositorio.findAll().stream().map(p -> {
             Double precioT = p.getPrecio() * 1.5d;
-            p.setPrecio(precioT.intValue()); // Aumentar el precio en un 10%
-            return p;
+            Productos nuevoP = new Productos(p.getIdProducto(), p.getNombre(), precioT.intValue());
+            // p.setPrecio(precioT.intValue()); // Aumentar el precio en un 10%
+            return nuevoP;
         }).toList();
 }
     public Productos findById(Long idProducto) {
